@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                        <h1>box model</h1>
+    <div class="box1">컨텐츠</div>
+<style>
+.box1{
+width:300px;
+height:300px;
+background-color: yellow;
+border:5px solid red;
+padding-top:50px ;
+padding-left:100px;
+margin-left:50px;
+}
+
+</style>
+            <   h2>width &amp;height</>
+    <div class="box2">block</div>
+    <div class="box2">block</div>
+    <div class="box2">block</div>
+<style> 
+.box2{
+background-color: grey;
+height: 100px;
+width: 50%;
+/* block요소 : heigh 기본값: 0 , width 기본값: 100%*/
+}    
+</style>
+    <span class="box3">inline</span>
+    <span class="box3">inline</span>
+    <span class="box3">inline</span>
+<style>
+.box3{
+background-color: skyblue;
+width:100%;
+height:50px;    
+}
+/* 인라인요소는 width, height값이 들어가지 않음(글씨 크기만큼만 들어감),*/
+</style>
+    <span class="box4">inline-block</span>
+    <span class="box4">inline-block</span>
+    <span class="box4">inline-block</span>
+<style>
+.box4{
+background-color: yellow;
+width:50px;
+height:50px;
+display:inline-block;    
+}
+</style>
+
+                <h2>max-width(최대가로사이즈)</h2>
+    <div class="maxw">max-width</div>
+    <div class="minw">min-width</div>
+<style>
+.maxw{
+background-color: cadetblue;
+max-width:1280px;
+max-height:500px;
+height: 600px;
+margin: 0 auto;
+}
+.minw{
+background-color: royalblue;
+min-width:320px;
+min-height:100vh;
+}
+</style>
+                <h2>border</h2>
+        <div class="border">border</div>
+<style>
+.border{
+height: 300px;
+background-color: aliceblue;
+border-width: 5px;
+border-style:dashed;
+border-color: rgba(255, 0, 0, 0.5);
+/*border: none;*/
+border-radius: 300px;
+}
+</style>
+
+                <h2>border-radius</h2>
+        <br><div class="radious"></div> <br><br><br><br><br><br><br>
+<style>
+.radious{
+background-color:violet;
+height: 200px;
+width: 200px;
+border-radius:100%;
+}
+</style>
+                <h2>padding</h2>
+            <div class="padding">padding</div>
+            <div class="padding">padding 가나다라마바사</div>
+            <div class="padding">padding</div>
+<style>
+/* div태그로 유동적 버튼을 생성하고자 할 때: display:inline-block으로 width100%를 없애야함.*/
+.padding{
+display: inline-block;
+background-color:rgb(214, 203, 203);
+border: 1px solid #c72424;
+padding:10px;
+}  
+</style>
+            <div class="padding2">padding2</div>
+<style>
+.padding2{
+border: 1px solid #000;
+height:100px;
+margin-top:50px;
+padding: 20px 30px;
+display: inline-block;
+}
+</style>
+
+
+
+                <h2>margin</h2>
+            <div class="margin">margin</div>
+            <div class="margin box">margin</div>
+            <div class="margin">margin</div>
+<style>
+.margin{
+border: 1px solid #c56e6e;
+background-color: aquamarine;
+margin:50px; /*겹치는 마진값은 하나의 마진값만 들어감*/
+}
+
+</style>
+
+            <div class="margin1">block요소가운데정렬
+                <div class="margin2">가운데정렬</div>
+            </div>
+<style>
+.margin1{
+border: 1px solid #c76194;
+background-color: aquamarine;
+width:300px;
+height:300px;
+margin: auto; /*사방향으로 marginauto가들어감*/
+text-align:center;
+
+}
+.margin3{
+width:50%;
+margin:auto;
+}
+</style>
+
+<div class="wrap">wrap
+<header class="header">header</header>
+<div class="slide">slide</div>
+<main class="main">main</main>
+<footer class="footer">footer</footer>
+</div>
+
+<style>
+.wrap{
+background-color:greenyellow ;
+width:1200px;
+text-align: center;
+margin: 200px auto 0px;
+}
+.header{
+height:100px;
+border-bottom: 5px solid #000;
+padding:30px;
+box-sizing: border-box;
+}
+.slide{
+border: 5px solid plum;
+height: 300px;
+}
+.main{
+margin:20px 20px 20px;
+border: 5px solid green;
+height:200px;
+}
+.footer{
+height:100px;
+border: 5px solid blue;
+}
+</style>
+
+
+
+
+
+<br><br><br><br><br><br><br></body>
+</html>

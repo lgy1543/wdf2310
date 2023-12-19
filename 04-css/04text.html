@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>text</h1>
+
+    <div class="text1" >글씨정렬</div>
+    <style>
+        .text1{
+            background-color: yellow
+
+        }
+    
+    
+            
+
+    </style>
+    <div class="text2">가운데정렬</div>
+    <style>
+        .text2{
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+    <div class="box1">
+        <span class="box2">인라인요소</span>
+    </div>
+
+
+
+    <style>
+        .box1 { width: 500px;
+                height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+           
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            
+            
+        }
+    </style>
+    <h2>verticla-align:middle</h2>
+    <img src="./image/다운로드.jfif" alt="네이버웨일" class="imgw">네이버웨일
+    <!--vertical-align:middle는 인라인요소에만 가능(블럭요소에는 안됨),이미지와 글씨 정렬할 때 사용-->
+    <style>
+        .imgw{vertical-align: middle;
+        display: block;}
+    </style>
+    <h2>text-decoration	&#38; text-decoration</h2>   
+
+    
+    <a href="#" >goto</a>
+    
+    
+    <style>
+        a{text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 10px;}
+        
+    </style>
+    <h2>text-indentation</h2>
+    <!--웹페이지 화면상 글씨를 안보이도록 날릴 때 사용(일반인은 안보이고 시각 장애인에게는 들리게)-->
+    <div class="indent">글씨를 날리자</div>
+    <style>
+        .indent{text-indent: -999900px;}
+    </style>
+    <h2>line-height & letter-spacing</h2>
+
+    <div class="txt1">  perspiciatis odit impedit iste quae distinctio  </div>
+
+    <style>
+        .txt1{font-size: 100px;
+            line-height: 1;
+            letter-spacing: -0.5px;} 
+
+    </style>
+    <h2>white-space</h2>
+    <div class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolores omnis? Eligendi dolor aliquid necessitatibus totam ipsa perspiciatis ratione, cumque inventore repudiandae pariatur earum facere dignissimos doloribus eius placeat eos!</div>
+    <!--nowrap으로 크기 축소시 한줄로 고정되게끔 함.-->
+    <style>
+        .txt2{ white-space:nowrap;
+               overflow: hidden;
+            text-overflow: ellipsis;}
+            
+            
+    </style>
+</body>
+</html>

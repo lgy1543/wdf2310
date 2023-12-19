@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2>background-color</h2>
+    <div class="bg1">
+        <div class="box1"></div>
+    </div>
+    <style>
+        .bg1{background:brown;
+        height: 80px;}
+
+        .bg1 box1{background-color: rgba(0, 0, 0);
+        height: 50px;}
+      
+    </style>
+
+    <h2>background-image</h2>
+
+    <div class="bg2"></div>
+<style>.bg2{height: 300px; background-image:url(./image/premium_photo-1700984292453-732e26d205fa.avif) ;}
+.bg2 {background-position: 0 0%;}
+</style>
+<div class="bg3"></div>
+<!--bgc가움직여야 img가 움직임.-->
+
+<style>
+    
+   
+    .bg3 {background-image: url(./image/thumb_360\ \(1\).jpg);
+    height: 800px;
+    background-repeat:no-repeat;
+    background-color: lightblue;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    
+    background: yellow url(./image/premium_photo-1700984292453-732e26d205fa.avif) no-repeat 50% 50% fixed;
+           
+}
+    
+</style>
+
+<h2>background-size</h2>
+
+<div class="bg4"></div>
+<div class="bg5"></div>
+<style>
+    .bg4{width: 300px; height: 150px; background-color: yellow;
+         background-image: url(./youtube\ \(1\).png);
+         background-position: -0% 50%;
+         background-repeat: no-repeat;
+            /* contain-배경이 잘려나가지 않고 박스안에 배경을 모두 보이게
+            cover- 배경이 잘라나가는 것에 상관없이 배경이미지를 채울 때 */
+            /*로고, 이미지*/
+         background-size: contain;
+        }
+
+    .bg5{width: 300px; height: 300px; background-color: yellowgreen;
+         background-image: url(./image/photo-1701636911624-637c97496874.avif);
+         background-repeat: no-repeat;
+         background-size: 300px auto;  
+         
+         /* background : color  image  no-repeat position / size 순서로 써야함 */  
+           
+            }    
+</style>
+
+<h2>image-sprites</h2>
+
+<a href="#" class="link home" >홈</a><br><br>
+<a href="#" class="link prev">이전</a><br><br>
+<a href="#" class="link next">다음</a><br><br><br><br><br>
+<style>
+.link{ display: block; }
+.home{
+     width: 45px; height: 47px;;
+    background: url(./image/img_navsprites\ \(1\).gif) no-repeat -1px 0;
+}
+.prev{ }
+</style>
+
+
+<div class="webtoon">네이버웹툰</div>
+<style>
+.webtoon{
+    background: url(./image/sp_main.d5b6c236.png) no-repeat  -450px -432px ;
+    width: 63px;
+    height: 59px;}
+</style>
+
+</body>
+</html>
